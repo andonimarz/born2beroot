@@ -34,4 +34,4 @@ echo "#User log:" $(who | wc -l)
 #Network IP
 echo "#Network: IP" $(hostname -I) $(ip a | grep link/ether | awk '{printf " (%s)\n", $2}')
 #Sudo
-echo "#Sudo : " $(cat /var/log/sudo/sudo.log | grep USER | wc | awk '{printf "%s cmd\n", $1}')
+echo "#Sudo : " $(cat /var/log/sudo/sudo_log | grep USER | wc | awk '{printf "%s cmd\n", $1}')
