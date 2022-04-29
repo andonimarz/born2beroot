@@ -28,9 +28,9 @@ echo "#Last boot:" $(who -b | awk ' {print $3,$4}')
 #LVM
 if [ $(lsblk | grep LVM | wc -l) -gt 0 ]
 then
-	echo "# LVM use		:	yes"
+	echo "# LVM use: yes"
 else
-	echo "# LVM use		:	no"
+	echo "# LVM use: no"
 fi
 #Connections TCP
 echo "#Connetions TCP:" $(ss -s | grep TCP | awk 'NR==2 {printf "%d ESTABLISHED\n", $3}')
