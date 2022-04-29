@@ -26,7 +26,12 @@ top -bn1 | grep load | awk '{printf "#CPU Load: %.2f%%\n", $(NF-2)}'
 #Last Boot
 echo "#Last boot:" $(who -b | awk ' {print $3,$4}')
 #LVM
-echo "#LVM use:" $(sudo lvm pvdisplay | grep Allocatable | awk '{print $2}')
+if [ $(lsblk | grep LVM | wc -l) -gt 0 ]
+then
+	echo "# LVM use		:	yes"
+else
+	echo "# LVM use		:	no"
+fi
 #Connections TCP
 echo "#Connetions TCP:" $(ss -s | grep TCP | awk 'NR==2 {printf "%d ESTABLISHED\n", $3}')
 #User log
