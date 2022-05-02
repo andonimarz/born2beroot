@@ -28,14 +28,7 @@
   libpam-pwquality: herramientas de generación y testeo de contraseñas.
   visudo            Permite la edición del archivo de configuración de sudo sudoers.
   
-  Comandos de Shell de monitoring.sh
-  $(comando)        permite usar el resultado del comando entre paréntesis como una variable más.
-  awk               herramienta/lenguaje que permite manipular información en linux.
-      ej:   awk 'NR==5' {print $2}  muestra de la línea 5 el segundo elemento.
-      ej2:  awk '$NF=="/"'          muestra las líneas cuyo último campo sea igual a "/". (NF = Nb of fields)
-  grep <patrón>     Global Regular Expression Print. busca el patrón indicado a continuación.
-  
-  Comandos de monitoring.sh
+  Explicación de monitoring.sh
   uname -a          arquitectura del SO ("-a" de all info)
   lscpu:            muestra info de la arquitectura de la cpu.
   free --mega       Muestra en MB la memoria libre, usada, total, etc.
@@ -47,5 +40,19 @@
   hostname          -a  alias, -d domain, -A all, -i  ip, -I all ip...
   ip -a             muestra/edita parámetros de red. "-a" address.
   LVM               administrador de volúmenes lógicos.
+  pvdisplay         muestra propiedades físicas de cada volumen físico (tamaño, extensiones, grupo de volúmenes, etc.)
+  lsblk             lista de dispositivos de bloque, que son archivos especiales que hacen referencia o representan
+                    cualquier dispositivo del PC.
+  crontab           permite automatizar tareas. -e  para editar el archivo crontab.
+                                                -l  para visualizar
   
+  Claves de Shell de monitoring.sh
+  #!/bin/bash       se usa al comienzo del script para indicar al SO que use bash como intérprete.    
+  $(comando)        permite usar el resultado del comando entre paréntesis como una variable más.
+  awk               herramienta/lenguaje que permite manipular información en linux.
+      ej:   awk 'NR==5' {print $2}  muestra de la línea 5 el segundo elemento.
+      ej2:  awk '$NF=="/"'          muestra las líneas cuyo último campo sea igual a "/". (NF = Nb of fields)
+  grep <patrón>     Global Regular Expression Print. busca el patrón indicado a continuación.
+  if [comando -gt0] comprueba si el resultado del comando es mayor que 0.
+  wc                cuenta el número de elementos. "-l" para líneas, "-w" para palabras y "-c" para bytes.
   
