@@ -13,12 +13,12 @@
 	lsblk			Para ver particiones
 	hostnamectl		Para mostrar/editar la info. 
 				(Para cambiar hostname "hostname set-hostname <nuevo hostname>")
-	su			abre un shell de superusuario que permite que los siguientes comandos tengan acceso de 
-				super usuario.
-	sudo			ofrece una elevación de privilegios para un solo comando. También sirve para ejecutar 
-				comandos como otros usuarios.
-	apt			Advanced Packaging Tool. para administrar los paquetes de la distro. Permite instalar, 
-				actualizar o borrar paquetes del sistema.
+	su			abre un shell de superusuario que permite que los siguientes comandos tengan
+				acceso de super usuario.
+	sudo			ofrece una elevación de privilegios para un solo comando. También sirve para 
+				ejecutar comandos como otros usuarios.
+	apt			Advanced Packaging Tool. para administrar los paquetes de la distro. Permite 
+				instalar, actualizar o borrar paquetes del sistema.
 	dpkg			gestión de paquetes "-l" muestra la lista de instalados.
 	SSH			Secure SHell. protocolo cuya función es el acceso remoto a un servidor por medio 
 				de un canal seguro en el que la info está cifrada.
@@ -33,16 +33,16 @@
 	lscpu:			muestra info de la arquitectura de la cpu.
 	free --mega		Muestra en MB la memoria libre, usada, total, etc.
 	df -h			Informa del espacio usado. La "h" es de human readable, en MB, GB, etc.
-	top -bn1		Table Of Processes.	-n indica el número de iteraciones a mostrar. (En este caso 1)
-							-b Batch mode. permite enviar la salida del comando a archivos o programas.
+	top -bn1		-n indica el número de iteraciones a mostrar. (En este caso 1)
+				-b Batch mode. permite enviar la salida del comando a archivos o programas.
 	who			información sobre quién está logeado.	-b  hora de último boot.
 									-a  all.
 	hostname		-a  alias, -d domain, -A all, -i  ip, -I all ip...
 	ip -a			muestra/edita parámetros de red. "-a" address.
 	LVM			administrador de volúmenes lógicos.
-	pvdisplay		muestra propiedades físicas de cada volumen físico (tamaño, extensiones, grupo de volúmenes, etc.)
-	lsblk			lista de dispositivos de bloque, que son archivos especiales que hacen referencia o representan
-				cualquier dispositivo del PC.
+	pvdisplay		muestra propiedades físicas de cada volumen físico (tamaño, extensiones, grupo, etc.)
+	lsblk			lista de dispositivos de bloque, que son archivos especiales que hacen referencia o 
+				representan cualquier dispositivo del PC.
 	crontab			permite automatizar tareas.	-e  para editar el archivo crontab.
 								-l  para visualizar
 
