@@ -22,8 +22,8 @@
 	dpkg			gestión de paquetes "-l" muestra la lista de instalados.
 	SSH			Secure SHell. protocolo cuya función es el acceso remoto a un servidor por medio 
 				de un canal seguro en el que la info está cifrada.
-	UFW			Uncomplicated FireWall. bloquear accesos no autorizados a un ordenador mientras sigue 
-				permitiendo la comunicación de tu ordenador con otros servicios autorizados.
+	UFW			Uncomplicated FireWall. bloquear accesos no autorizados a un ordenador mientras
+				sigue permitiendo la comunicación de tu ordenador con otros servicios autorizados.
 				(Para conectarse desde fuera de la MV "ssh <username>@<ip> -p <puerto>)
 	libpam-pwquality:	herramientas de generación y testeo de contraseñas.
 	visudo			Permite la edición del archivo de configuración de sudo sudoers.
@@ -40,9 +40,9 @@
 	hostname		-a  alias, -d domain, -A all, -i  ip, -I all ip...
 	ip -a			muestra/edita parámetros de red. "-a" address.
 	LVM			administrador de volúmenes lógicos.
-	pvdisplay		muestra propiedades físicas de cada volumen físico (tamaño, extensiones, grupo, etc.)
-	lsblk			lista de dispositivos de bloque, que son archivos especiales que hacen referencia o 
-				representan cualquier dispositivo del PC.
+	pvdisplay		muestra propiedades físicas de cada volumen físico (tamaño, extensiones, grupo...)
+	lsblk			lista de dispositivos de bloque, que son archivos especiales que hacen referencia
+				o representan cualquier dispositivo del PC.
 	crontab			permite automatizar tareas.	-e  para editar el archivo crontab.
 								-l  para visualizar
 
@@ -54,5 +54,5 @@
 		ej2:	awk '$NF=="/"'          muestra las líneas cuyo último campo = "/". (NF = Nb of fields)
 	grep <patrón>		Global Regular Expression Print. busca el patrón indicado a continuación.
 	if [comando -gt0]	comprueba si el resultado del comando es mayor que 0.
-	wc			cuenta el número de elementos. "-l" para líneas, "-w" para palabras y "-c" para bytes.
+	wc			cuenta el número de elementos. "-l" para líneas, "-w" palabras y "-c" bytes.
 	
