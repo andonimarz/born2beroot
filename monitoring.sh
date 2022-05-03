@@ -24,7 +24,7 @@ df -h | awk '$NF=="/"{printf "#Disk Usage: %d/%dGB (%s)\n", $3,$2,$5}'
 #CPU Load
 top -bn1 | grep load | awk '{printf "#CPU Load: %.2f%%\n", $(NF-2)}'
 #Last Boot
-echo "#Last boot:" $(who -b | awk ' {print $3,$4}')
+echo "#Last boot:" $(who -b | awk ' {print $3,$4,$5}')
 #LVM
 if [ $(lsblk | grep LVM | wc -l) -gt 0 ]
 then
