@@ -51,7 +51,7 @@
 	$(comando)		permite usar el resultado del comando entre paréntesis como una variable más.
 	awk			herramienta/lenguaje que permite manipular información en linux.
 		ej:	awk 'NR==5' {print $2}  muestra de la línea 5 el segundo elemento.
-		ej2:	awk '$NF=="/"'          muestra las líneas cuyo último campo sea igual a "/". (NF = Nb of fields)
+		ej2:	awk '$NF=="/"'          muestra las líneas cuyo último campo = "/". (NF = Nb of fields)
 	grep <patrón>		Global Regular Expression Print. busca el patrón indicado a continuación.
 	if [comando -gt0]	comprueba si el resultado del comando es mayor que 0.
 	wc			cuenta el número de elementos. "-l" para líneas, "-w" para palabras y "-c" para bytes.
